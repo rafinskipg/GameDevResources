@@ -1,0 +1,60 @@
+body{
+    background-color: black;
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.3em;
+}
+section {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+a:hover {
+    text-decoration: none;
+}
+
+/* Game */
+#game{
+   height: 800px;
+   width: 800px;
+   position:relative;
+   
+  /*  -webkit-animation-name: rotate; 
+    -webkit-animation-duration: 2s; 
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear; */
+}
+#quantity{
+    width: 98%;
+    margin-top: 30px;
+}
+@-webkit-keyframes rotate {
+    from {-webkit-transform: rotate3d(0,1.0,0,0deg);}
+    to {-webkit-transform:  rotate3d(0,1.0,0,360deg);}
+}
+
+@-webkit-keyframes transl {
+    /* from {-webkit-transform: translate3d(0,0px,-400px) rotate3d(0,1.0,0,0deg);}
+    to {-webkit-transform:  translate3d(0,0px,400px) rotate3d(0,1.0,0,360deg);} */
+    
+    from {-webkit-transform:rotate3d(0,1.0,0,0deg);}
+    to {-webkit-transform:  rotate3d(0,1.0,0,360deg);}
+}
+
+.creature{
+-webkit-transition: all 1s cubic-bezier(0.42,0,0.58,1) ;
+     -moz-transition: all 1s cubic-bezier(0.42,0,0.58,1);
+       -o-transition: all 1s cubic-bezier(0.42,0,0.58,1);
+          transition: all 1s cubic-bezier(0.42,0,0.58,1);
+          position:absolute;
+    
+          
+          
+          margin: 3px 0 0 30px;
+          
+    -webkit-animation-name: transl; 
+    -webkit-animation-duration: 2s; 
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear; 
+   /* Rotate Origin */
+  
+}
